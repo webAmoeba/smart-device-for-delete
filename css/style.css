@@ -1661,9 +1661,6 @@ button,
   padding-top: 120px;
   color: #f2f5f7;
   background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
   background-size: cover;
 }
 
@@ -1954,9 +1951,6 @@ button,
   max-width: 350px;
   width: 100%;
   background-color: #2c39f2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background.jpg");
   background-position-x: 17%;
   background-position-y: bottom;
   background-size: auto 108%;
@@ -2524,6 +2518,34 @@ button,
   }
 */
 
+@media (min-width: 1024px) {
+  .main-screen {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
+  }
+
+  .products-and-services__item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background.jpg");
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
+  }
+
+  .products-and-services__item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
+  }
+}
+
 @media (max-width: 1023px) {
   .main-header {
     background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0) 0, #041827 15px);
@@ -2728,12 +2750,12 @@ button,
 
   .products-and-services__item {
     max-width: unset;
+    background-size: unset;
+    background-position-x: 30%;
+    background-position-y: 97%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-tablet.jpg");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tablet.jpg");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tablet.jpg");
-    background-position-x: 29%;
-    background-position-y: 97%;
-    background-size: unset;
   }
 
   .products-and-services__item--second {
@@ -2985,9 +3007,6 @@ button,
 
   .main-screen {
     padding-top: 70px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tall.jpg");
     background-position-x: unset;
     background-size: cover;
     background-position-y: unset;
@@ -3289,14 +3308,6 @@ button,
   }
 }
 
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .main-screen {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tall@2x.jpg");
-  }
-}
-
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -3312,20 +3323,8 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .main-screen {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
-  }
-
   .about-company__year {
     background-image: url("../img/backgrounds/year@2x.jpg");
-  }
-
-  .products-and-services__item {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
   }
 
   .form .container::before {
