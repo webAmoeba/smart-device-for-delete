@@ -2986,11 +2986,11 @@ button,
   }
 
   .main-screen {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall.jpg");
     padding-top: 70px;
-    background-position-x: unset;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-mobile.jpg");
+    background-position-x: 34%;
     background-size: cover;
     background-position-y: unset;
   }
@@ -3155,21 +3155,21 @@ button,
   }
 
   .products-and-services__item {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall.jpg");
-    background-position-x: 31%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile.jpg");
+    background-position-x: 46%;
     background-position-y: 53%;
   }
 
   .products-and-services__item--second {
-    background-position-x: 30%;
-    background-position-y: 95%;
+    background-position-x: 46%;
+    background-position-y: bottom;
   }
 
   .products-and-services__item--third {
-    background-position-x: 72%;
-    background-position-y: 69%;
+    background-position-x: left;
+    background-position-y: 53%;
   }
 
   .products-and-services__link {
@@ -3296,15 +3296,15 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .main-screen {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-mobile@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-mobile@2x.jpg");
   }
 
   .products-and-services__item {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-tall@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile@2x.jpg");
   }
 }
 
